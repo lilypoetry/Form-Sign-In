@@ -61,10 +61,66 @@ main section {
     /* Astuce 2 */
     margin-bottom: 50px;
  }
- 
- fieldset {
+
+ /**
+ * FORMULAIRE
+ */
+
+ .signIn form {
+     width: 50%;
+     margin: auto;
+ }
+
+ .signIn form h1 {
+     font-size: 2.3rem;
+     margin: 0;
+ }
+
+ .signIn form p {
+     color: var(--gris);
+     margin: 0 0 32px 0; /* Haut, droite, bas et gauche */
+ }
+ .signIn form label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 2px;
+ }
+
+ .signIn form input {
+     display: block;
+     border: 1px solid var(--gris-clair);
+     border-radius: 4px;
+     padding: 12px; /* 12px de marge intérieur sur les 4 côtés */
+     margin-bottom: 16px;
+     width: 100%;
+     /* https://developer.mozilla.org/fr/docs/Web/CSS/box-sizing */
+     box-sizing: border-box; /* pour ne pas prend en compte le padding 12px */
+ }
+
+ .signIn form button {
      background-color: var(--noir);
      color: var(--blanc);
+     border-radius: 4px;
+     padding: 12px 0;
+     border: 0;
+     width: 100%;
+ }
+
+ .signIn form a {
+     border: 1px solid var(--gris-clair);
+     display: flex; /* centrer vertical et horizontal */
+     align-items: center;
+     justify-content: center;
      text-decoration: none;
-     width: 150px;
+     color: var(--noir);
+     font-size: 0.9em;
+     gap: 10px;
+     padding: 10px 0;
+     border-radius: 4px;
+     margin-top: 12px;
+ }
+
+ .signIn form a img {
+     width: 5%;
  }
