@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap');
+
+:root {
+    /* Quand un hexadecimal comporte 6 fois le même caractère, on peut en mettre que 3 */
+    --blanc: #ffffff;
+    --blanc-opacity-85: rgba(255, 255, 255, 0.85);
+    --noir: #000;
+    --gris-clair: #cbcbcb;
+    --gris: rgb(128, 128, 128);
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    height: 100vh; /* Viewport height */    
+ }
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+main section {
+    width: 50%;
+    
+}
+/**
+ * COLONNE DE DROITE
+ */
+ .presentation {
+    background: url('../imgs/women_book.jpg') center no-repeat;
+    background-size: cover; /* pour avoir la taille image couvre le bloc presentation */
+    height: 100%;
+
+    /* Astuce 1 */
+    /* position: relative; */
+
+    /* Astuce 2 */
+    display: flex;
+    justify-content: center;
+    align-items: self-end;
+   
+ }
+
+ .presentation div {
+     background-color: var(--blanc-opacity-85);
+     width: 85%;
+     border-radius: 6px;
+     font-size: 1.5rem;
+     padding: 20px;
+
+     /* Astuce 1 */
+    /* position: absolute; */
+    /* bottom: 50px; */
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
+
+    /* Astuce 2 */
+    margin-bottom: 50px;
+ }
+ 
+ fieldset {
+     background-color: var(--noir);
+     color: var(--blanc);
+     text-decoration: none;
+     width: 150px;
+ }
